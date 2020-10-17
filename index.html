@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chilanka&family=Lemonada:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Etch-a-sketch</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>etch-a-sketch</h1>
+      <p>
+        From
+        <a
+          href="https://www.theodinproject.com/courses/web-development-101/lessons/etch-a-sketch-project"
+          target="_blank"
+          >The Odin Project</a
+        >
+      </p>
+    </div>
+    <div class="options">
+      <label for="gridSize">Change the grid size: </label>
+      <input type="number" id="gridSize" placeholder="Default: 16" min="1" max="50" />
+      <button>Go!</button>
+
+      <div>
+        <label for="rainbowColor">
+          <span>R</span><span>a</span><span>i</span><span>n</span><span>b</span><span>o</span
+          ><span>w</span> <span>M</span><span>o</span><span>d</span><span>e</span></label
+        >
+        <input type="checkbox" name="rainbow" id="rainbowColor" />
+      </div>
+      <div>
+        <label for="shader">Shader Effect</label>
+        <input type="checkbox" name="shader" id="shader" />
+      </div>
+    </div>
+    <div id="sketch-container"></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
